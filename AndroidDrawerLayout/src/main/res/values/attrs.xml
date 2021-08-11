@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+    <declare-styleable name="PullDownLayout">
+        <attr name="pdl_mode" format="enum" >
+            <enum name="under" value="0"/>
+            <enum name="top" value="1"/>
+        </attr>
+        <attr name="pdl_closeType" format="enum" >
+            <enum name="normal" value="0"/>
+            <enum name="allways" value="1"/>
+        </attr>
+        <attr name="pdl_pullToClosePosition" format="float"/>
+        <attr name="pdl_pullToOpenPosition" format="float"/>
+    </declare-styleable>
+
+    <declare-styleable name="DrawerLayout">
+        <attr name="dlt_statusBarBackground" format="reference|color" />
+
+    </declare-styleable>
+
+
+    <declare-styleable name="DrawerLayout_LayoutParams">
+        <attr name="layout_dlt_closeType" format="enum" >
+            <enum name="normal" value="0"/>
+            <enum name="allways" value="1"/>
+        </attr>
+        <attr name="layout_dlt_pullToClosePosition" format="float"/>
+        <attr name="layout_dlt_pullToOpenPosition" format="float"/>
+        <attr name="layout_dlt_sizeWeight" format="float"/>
+        <attr name="layout_dlt_applyWindowInsets" format="enum" >
+            <enum name="none" value="0"/>
+            <enum name="margin" value="1"/>
+            <enum name="padding" value="2"/>
+        </attr>
+        <attr name="layout_dlt_mode" format="enum" >
+            <enum name="cover" value="0"/>
+            <enum name="concat" value="1"/>
+        </attr>
+    </declare-styleable>
+
+</resources>

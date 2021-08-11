@@ -1,0 +1,3 @@
+rootProject.name = "AndroidDrawerLayout"
+include ':demo'
+include ':AndroidDrawerLayout'

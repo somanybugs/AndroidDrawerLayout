@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lhg.drawerlayout.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pullDownLayout"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:background="@android:color/holo_orange_dark"
+        app:layout_dlt_mode="concat"
+        app:layout_dlt_sizeWeight="0.6"
+        android:layout_gravity="top"
+        app:layout_dlt_applyWindowInsets="margin"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="顶部" />
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        app:layout_dlt_applyWindowInsets="margin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:background="@color/md_red_50"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="@android:color/holo_red_light"
+        app:layout_dlt_mode="cover"
+        app:layout_dlt_sizeWeight="0.8"
+        android:layout_gravity="left"
+        app:layout_dlt_applyWindowInsets="padding"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:background="@color/holo_orange_dark"
+            android:gravity="center"
+            android:text="左边1" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:background="@color/purple"
+            android:gravity="center"
+            android:text="左边2" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/white"
+        app:layout_dlt_mode="cover"
+        android:layout_gravity="bottom"
+        app:layout_dlt_sizeWeight="0.3"
+        app:layout_dlt_applyWindowInsets="padding"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:background="@color/red"
+            android:gravity="center"
+            android:text="底部" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        app:layout_dlt_mode="cover"
+        android:background="@color/white"
+        app:layout_dlt_sizeWeight="0.3"
+        android:layout_gravity="right"
+        app:layout_dlt_applyWindowInsets="padding"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:textColor="@color/white"
+            android:background="@color/blue"
+            android:gravity="center"
+            android:text="右边" />
+    </LinearLayout>
+
+
+
+
+</lhg.drawerlayout.DrawerLayout>
